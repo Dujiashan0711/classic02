@@ -16,6 +16,7 @@ struct ContentView: View {
             Spacer()
         Text("好好學會版控日後會方便很多")
             .padding(.bottom,40)
+            Text("abc")
         }
         .frame(height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         .frame( maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
