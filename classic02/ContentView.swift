@@ -57,7 +57,7 @@ struct ContentView: View {
         }
         .frame(height: 240, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         .frame( maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-        .background(LinearGradient(gradient: Gradient(colors:[Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.9159325133, green: 0.9159325133, blue: 0.9159325133, alpha: 1)),Color(#colorLiteral(red: 0.8499833777, green: 0.8499833777, blue: 0.8499833777, alpha: 1))]), startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(gradient: Gradient(colors:[Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),Color(#colorLiteral(red: 0.7777085518, green: 0.8537939282, blue: 0.8841284353, alpha: 1))]), startPoint: .top, endPoint: .bottom))
         .cornerRadius(30)
         .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 20)
         .padding()
