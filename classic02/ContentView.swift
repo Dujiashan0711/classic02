@@ -10,19 +10,33 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
+        HStack{
+            Image(systemName: "gear")
+                .padding(.top,120)
             Text("Account")
                 .bold()
                 .font(.none)
                 .padding(.top,120)
+            }
             Spacer()
+        HStack{
+            Image(systemName: "creditcard")
+                .padding(.leading,15)
             Text("Billing")
                 .bold()
+                .padding(.trailing,15)
+                .padding(.trailing)
                 .font(.none)
-                .padding()
+        }
+            Spacer()
+            HStack{
+                Image(systemName: "person.crop.circle")
+                    .padding(.bottom,30)
             Text("Sign out")
                 .bold()
                 .font(.none)
-                .padding(.bottom,50)
+                .padding(.bottom,30)
+            }
         }
         .frame(height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         .frame( maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
