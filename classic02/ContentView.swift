@@ -75,7 +75,12 @@ struct ContentView: View {
             Image(systemName: "wifi")
                 .offset(x: 110, y: -270)
             Image(systemName: "ellipsis")
+                .foregroundColor(Color(#colorLiteral(red: 0.7645722518, green: 0.7645722518, blue: 0.7645722518, alpha: 1)))
                 .offset(x: 80, y: -270)
+            Image(systemName: "minus")
+                .resizable()
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 4, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .padding(.top,530)
     }
 }
 }
