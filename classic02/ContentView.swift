@@ -10,20 +10,27 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack{
-        Text("學習如何Git版控")
-            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            .padding(.top,40)
+            Text("Account")
+                .bold()
+                .font(.none)
+                .padding(.top,120)
             Spacer()
-        Text("好好學會版控日後會方便很多")
-            .padding(.bottom,40)
-            Text("abc")
+            Text("Billing")
+                .bold()
+                .font(.none)
+                .padding()
+            Text("Sign out")
+                .bold()
+                .font(.none)
+                .padding(.bottom,50)
         }
-        .frame(height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .frame(height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         .frame( maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
-        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-        .cornerRadius(16)
+        .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), Color(#colorLiteral(red: 0.9076588365, green: 0.9076588365, blue: 0.9076588365, alpha: 1)),Color(#colorLiteral(red: 0.8156720966, green: 0.8156720966, blue: 0.8156720966, alpha: 1))]), startPoint: .top, endPoint: .bottom))
+        .cornerRadius(30)
+        .shadow(color: Color.black.opacity(0.3), radius: 20, x: 0, y: 20)
         .padding()
-}
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
