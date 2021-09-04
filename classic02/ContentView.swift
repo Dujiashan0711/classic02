@@ -66,6 +66,16 @@ struct ContentView: View {
                 .frame(width: 80, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(150)
                 .padding(.bottom,250)
+            Text("10:36")
+                .font(.none)
+                .bold()
+                .offset(x: -110, y:-270)
+            Image(systemName: "battery.100")
+                .offset(x: 140 ,y: -270)
+            Image(systemName: "wifi")
+                .offset(x: 110, y: -270)
+            Image(systemName: "ellipsis")
+                .offset(x: 80, y: -270)
     }
 }
 }
