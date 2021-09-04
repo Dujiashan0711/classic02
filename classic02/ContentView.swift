@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack{
         HStack{
             Image(systemName: "gear")
+                .foregroundColor(Color(#colorLiteral(red: 0.5760982144, green: 0.5818219629, blue: 0.7321725399, alpha: 1)))
                 .padding(.top,120)
             Text("Account")
                 .bold()
@@ -21,6 +22,7 @@ struct ContentView: View {
             Spacer()
         HStack{
             Image(systemName: "creditcard")
+                .foregroundColor(Color(#colorLiteral(red: 0.5760982144, green: 0.5818219629, blue: 0.7321725399, alpha: 1)))
                 .padding(.leading,15)
             Text("Billing")
                 .bold()
@@ -29,9 +31,11 @@ struct ContentView: View {
                 .font(.none)
         }
             Spacer()
-            HStack{
-                Image(systemName: "person.crop.circle")
-                    .padding(.bottom,30)
+        HStack{
+            Image(systemName:
+                    "person.crop.circle")
+                .foregroundColor(Color(#colorLiteral(red: 0.5760982144, green: 0.5818219629, blue: 0.7321725399, alpha: 1)))
+                .padding(.bottom,30)
             Text("Sign out")
                 .bold()
                 .font(.none)
