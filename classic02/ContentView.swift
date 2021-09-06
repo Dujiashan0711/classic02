@@ -11,14 +11,24 @@ struct ContentView: View {
     var body: some View {
         ZStack{
         VStack{
-            Text("Shan.D - 28%完成度")
+            Text("Shan.D - 50%完成度")
                 .font(.system(size:10))
                 .padding(.top,60)
-            Image("01")
-                .resizable()
-                .frame(width: 110, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .cornerRadius(60)
-                .padding(.top,10)
+            ZStack{
+         Rectangle()
+            .frame(width:120 , height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color(#colorLiteral(red: 0.8327931073, green: 0.8327931073, blue: 0.8327931073, alpha: 1)))
+            .cornerRadius(10)
+         Rectangle()
+            .frame(width:100 , height: 5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+            .cornerRadius(10)
+         Rectangle()
+            .frame(width:50 , height: 5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+            .cornerRadius(10)
+            .padding(.trailing,50)
+            }
             HStack{
             Image(systemName: "gear")
                 .foregroundColor(Color(#colorLiteral(red: 0.5760982144, green: 0.5818219629, blue: 0.7321725399, alpha: 1)))
