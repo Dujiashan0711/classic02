@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         ZStack{
         VStack{
-            Text("Shan.D - 50%完成度")
+            Text("Shan.D - ")
                 .font(.system(size:10))
                 .padding(.top,60)
             ZStack{
